@@ -1,0 +1,61 @@
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.achievement-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 140px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card-number {
+  color: #00aeff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.card-description {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .impact-section-container {
+    padding: 30px 35px;
+  }
+}
+
+@media (max-width: 576px) {
+  .achievements-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .impact-section-container {
+    padding: 25px 20px;
+  }
+  .impact-title {
+    font-size: 1.5rem;
+  }
+  .card-number {
+    font-size: 2rem;
+  }
+  .card-description {
+    font-size: 0.9rem;
+  }
+}

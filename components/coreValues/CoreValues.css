@@ -1,0 +1,106 @@
+/* ===== Core Values Section ===== */
+.core-values {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 8rem 1rem;
+  box-sizing: border-box;
+}
+
+/* ===== Section Title ===== */
+.core-values__title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: #0e7490;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+/* ===== Wrapper (for dashed line + grid) ===== */
+.core-values__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* ===== Center Dashed Line ===== */
+.core-values__line {
+  position: absolute;
+  display: none;
+  top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 1px;
+  border-top: 2px dashed #06b6d4;
+  z-index: -1;
+}
+
+/* يظهر الخط فقط على الشاشات الكبيرة */
+@media (min-width: 1024px) {
+  .core-values__line {
+    display: block;
+  }
+}
+
+/* ===== Grid Layout ===== */
+.core-values__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem 1.5rem; /* صفوف وأعمدة */
+  width: 100%;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+
+/* الأجهزة المتوسطة (تابلت) */
+@media (max-width: 992px) {
+  .core-values {
+    padding: 6rem 1.5rem;
+  }
+
+  .core-values__title {
+    font-size: 1.875rem;
+    margin-bottom: 4rem;
+  }
+
+  .core-values__grid {
+    gap: 3rem 1rem;
+  }
+
+  .core-values__line {
+    width: 50%;
+    top: 2.5rem;
+  }
+}
+
+/* الأجهزة الصغيرة (موبايل) */
+@media (max-width: 640px) {
+  .core-values {
+    padding: 4rem 1rem;
+  }
+
+  .core-values__title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .core-values__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .core-values__grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .core-values__line {
+    display: none; /* نخفي الخط في الجوال لأنه يسبب زحمة */
+  }
+}

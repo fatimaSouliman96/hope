@@ -1,0 +1,149 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* لتسمح بتوزيع العناصر عمودياً في الشاشات الصغيرة */
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+
+/* النص */
+.text-side {
+    width: 30%;
+    min-width: 300px;
+}
+
+.text-side h2 {
+    text-align: left !important;
+}
+
+/* الصورة والعناصر المرتبطة */
+.about .image-side {
+    width: 40%;
+    position: relative;
+    min-width: 300px;
+}
+
+.aboutPge .image-side {
+    width: 60% !important;
+
+}
+
+.reverse{
+    flex-direction: row-reverse!important;
+}
+
+.about .image {
+    position: relative;
+    width: 432px;
+    height: 432px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.about .dotes {
+    width: 172px;
+    height: 134px;
+    position: absolute;
+    right: 0;
+    top: -5rem;
+    z-index: -1;
+}
+
+.about .Rectangle {
+    width: 432px;
+    height: 432px;
+    position: absolute;
+    right: 20px;
+    top: -2rem;
+    z-index: -1;
+}
+
+.images {
+    display: grid;
+    width: 100%;
+    height: 432px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.img1, .img5 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.img4, .img8 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+
+/* للشاشات المتوسطة (تابلت) */
+@media (max-width: 992px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-side,
+    .about .image-side {
+        width: 100%!important;
+    }
+
+    .about .image {
+        width: 350px;
+        height: 350px;
+    }
+
+    .about .dotes {
+        width: 140px;
+        height: 110px;
+        right: -10px;
+        top: -3rem;
+    }
+
+    .about .Rectangle {
+        width: 350px;
+        height: 350px;
+        right: 0;
+        top: -1rem;
+    }
+}
+
+/* للشاشات الصغيرة (جوالات) */
+@media (max-width: 640px) {
+    .about {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .text-side,
+    .about .image-side {
+        width: 100%!important;
+    }
+
+    .about .image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about .dotes {
+        width: 100px;
+        height: 80px;
+        right: 0;
+        top: -2rem;
+    }
+
+    .about .Rectangle {
+        width: 250px;
+        height: 250px;
+        right: 0;
+        top: -1rem;
+    }
+
+    .text-side h2 {
+        text-align: center !important;
+    }
+}

@@ -1,0 +1,150 @@
+/* ===== Main Section Container ===== */
+.vision-mission-section {
+  position: relative;
+  width: 90%;
+  margin: 6rem auto 0 auto;
+  min-height: 493px;
+  border-radius: 16px;
+  background: linear-gradient(269.98deg, #3966c1 0.02%, #1b305b 46.8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* ===== Inner Content Wrapper ===== */
+.vision-mission-content {
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* ===== Section Title ===== */
+.vision-mission-title {
+  max-width: 920px;
+  margin: 0 auto 20px auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+/* ===== Cards Container ===== */
+.vision-mission-cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+/* ===== Shared Card Style ===== */
+.vision-card,
+.mission-card {
+  width: 100%;
+  max-width: 444px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px 16px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+/* ===== Icon Placeholder ===== */
+.icon-placeholder {
+  width: 96px;
+  height: 37px;
+}
+
+/* ===== Card Title ===== */
+.card-title {
+  width: 100%;
+  max-width: 412px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #1b305b;
+  margin: 0;
+}
+
+/* ===== Card Text ===== */
+.card-text {
+  width: 100%;
+  max-width: 412px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20.75px;
+  text-align: center;
+  color: #1b305b;
+  margin: 0;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+
+/* التابلت */
+@media (max-width: 992px) {
+  .vision-mission-section {
+    margin-top: 4rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .vision-mission-title {
+    font-size: 30px;
+  }
+
+  .vision-mission-cards {
+    gap: 20px;
+  }
+
+  .vision-card,
+  .mission-card {
+    max-width: 380px;
+  }
+}
+
+/* الموبايل */
+@media (max-width: 640px) {
+  .vision-mission-section {
+    flex-direction: column;
+    min-height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .vision-mission-title {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+  }
+
+  .vision-mission-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .vision-card,
+  .mission-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .card-text {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}

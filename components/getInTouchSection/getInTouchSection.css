@@ -1,0 +1,187 @@
+/* ================= CONTACT SECTION ================= */
+.contact-section {
+  background-image: url("/TounchImage.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90%;
+  margin: 6rem auto 0 auto;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.contact-section::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1b305bbf;
+  border-radius: 16px;
+  z-index: -1;
+}
+
+/* ===== Title ===== */
+.contact-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* ===== Container ===== */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8rem;
+  padding: 2rem;
+  flex-wrap: nowrap;
+}
+
+/* ===== Left Side ===== */
+.contact-info {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 50%;
+}
+
+.contact-info-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.contact-info-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.contact-details {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0;
+}
+
+.contact-details li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-container .social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-map {
+  width: 100%;
+  height: 224px;
+}
+
+.contact-map iframe {
+  width: 100%;
+  border-radius: 12px;
+  height: 224px;
+  border: none;
+}
+
+p {
+  margin: 0 !important;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* تابلت */
+@media (max-width: 992px) {
+  .contact-section {
+    width: 95%;
+    padding: 1.5rem;
+    height: auto;
+  }
+
+  .contact-title {
+    font-size: 1.75rem;
+  }
+
+  .contact-container {
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1.5rem;
+  }
+
+  .contact-info {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .contact-info-title {
+    font-size: 1.1rem;
+  }
+
+  .contact-info-text {
+    font-size: 0.9rem;
+  }
+
+  .contact-map {
+    height: 200px;
+  }
+}
+
+/* موبايل */
+@media (max-width: 640px) {
+  .contact-section {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 4rem;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .contact-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+
+  .contact-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-info-title {
+    font-size: 1rem;
+  }
+
+  .contact-info-text {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .contact-map {
+    width: 100%;
+    height: 180px;
+  }
+
+  .contact-map iframe {
+    height: 180px;
+  }
+
+  .contact-container .social-icons {
+    justify-content: center;
+  }
+}
