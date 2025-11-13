@@ -10,7 +10,7 @@ import ValuedPartners from '../components/ValuedPartners/ValuedPartners'
 import Regions from '../components/Regions/Regions'
 import JoinSection from "../components/joinSection/JoinSection";
 
-export default function Home() {
+export default function page() {
   return (
     <div >
       <MainSection 
