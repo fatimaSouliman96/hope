@@ -1,0 +1,185 @@
+.footer {
+  width: 100%;
+  background: #fff;
+  padding-top: 20px;
+  color: #1B305B;
+}
+
+.topBorder,
+.bottomBorder {
+  width: 98%;
+  margin: auto;
+  margin-bottom: 25px;
+}
+.topBorder {
+   border-top: 1px solid #1B305B;
+}
+
+.bottomBorder {
+    border-top: 1px solid #1b305b2a;
+}
+
+.container {
+  max-width: 1250px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 3rem 0.5rem;
+}
+
+.left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.logoWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoWrap h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.logoWrap p {
+  margin: 0;
+  padding-top: 0.5rem;
+  font-size: 12px;
+}
+
+.text {
+  padding-top: 2rem;
+  line-height: 1.6;
+  max-width: 250px;
+}
+
+.linksWrapper {
+  display: flex;
+  gap: 50px;
+  margin-left: 7rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+}
+
+.links h4 {
+  margin-bottom: 1rem;
+  font-size: 15px;
+}
+
+.links a {
+  color: #1B305B;
+  text-decoration: none;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.links a:hover {
+  color: #0077cc;
+}
+
+.contact {
+  min-width: 200px;
+}
+
+.contact h4 {
+  margin-bottom: 10px;
+}
+
+.contactRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.contactRow span, 
+.social span {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.social {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.copy {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .linksWrapper {
+    margin-left: 0;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+
+  .text {
+    max-width: 100%;
+  }
+
+  .linksWrapper {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 25px;
+  }
+
+  .links {
+    min-width: 140px;
+  }
+
+  .contact {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .logoWrap h2 {
+    font-size: 18px;
+  }
+
+  .logoWrap p {
+    font-size: 11px;
+  }
+
+  .linksWrapper {
+    gap: 15px;
+  }
+
+  .links h4 {
+    font-size: 14px;
+  }
+
+  .links a {
+    font-size: 13px;
+  }
+
+  .copy {
+    font-size: 12px;
+  }
+}
+

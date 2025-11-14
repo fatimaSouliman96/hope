@@ -5,7 +5,7 @@ import JoinSection from "@/components/joinSection/JoinSection";
 import MainSection from "@/components/MainSection/MainSection";
 import ValuedPartners from "@/components/ValuedPartners/ValuedPartners";
 import { images1, images2 } from "@/constant/imagesx";
-
+import StructureRoles from '@/components/StructureRoles/StructureRoles'
 
 export default function AboutPage() {
     return (
@@ -53,6 +53,7 @@ export default function AboutPage() {
                 />
                 <ImpactSection />
                 <CoreValues />
+                <StructureRoles />
                 <ValuedPartners />
                 <JoinSection />
             </div>

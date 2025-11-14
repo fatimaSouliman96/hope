@@ -1,0 +1,171 @@
+    .timeline {
+        padding: 40px 16px;
+        background: white;
+        color: #1a2540;
+        font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    .inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .wave {
+        width: 100%;
+        height: 160px;
+        display: block;
+        overflow: visible;
+    }
+
+    .dash-path {
+        stroke: #1a2540;
+        stroke-dasharray: 6 8;
+        stroke-linecap: round;
+        opacity: 0.35;
+    }
+
+    .steps {
+        position: relative;
+        width: 100%;
+        height: 0;
+        /* markers are absolutely positioned over the svg */
+    }
+
+    /* base marker style */
+    .marker {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: #18233e;
+        color: white;
+        display: inline-grid;
+        place-items: center;
+        font-weight: 700;
+        box-shadow: 0 4px 12px rgba(24, 35, 62, 0.12);
+    }
+
+    .step {
+        position: absolute;
+        transform: translateX(-50%);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 260px;
+    }
+
+
+    .step .title {
+        margin: 12px 0 6px;
+        font-size: 16px;
+        color: #0f203b;
+    }
+
+    .step .desc {
+        font-size: 13px;
+        color: #5b6470;
+        line-height: 1.4;
+        margin: 0 auto;
+        max-width: 220px;
+    }
+
+    /* position markers roughly along the wave using percentages */
+    .step-1 {
+        right: 61%;
+        top: -3rem;
+        gap: 2rem;
+    }
+
+    .step-2 {
+        right: 24%;
+        top: -12rem;
+        flex-direction: column-reverse !important;
+        gap: 4rem;
+    }
+
+    .step-3 {
+        right: -17%;
+        gap: 4rem;
+        top: -10rem;
+    }
+
+    /* move marker slightly up so it's visually on the wave */
+    .step .marker {
+        display: inline-block;
+        transform: translateY(0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .step-1 .title .desc {
+        margin-top: 2rem;
+    }
+
+    /* responsive adjustments */
+    @media (max-width: 880px) {
+        .inner {
+            padding: 0 8px;
+        }
+
+        .step {
+            width: 220px;
+        }
+
+        .step .desc {
+            max-width: 200px;
+            font-size: 13px;
+        }
+
+        .step-1 {
+            left: 8%;
+            top: 70px;
+        }
+
+        .step-2 {
+            left: 50%;
+            top: 40px;
+        }
+
+        .step-3 {
+            left: 92%;
+            top: 70px;
+        }
+    }
+
+    /* small screens: stack vertically and replace the wave with a simple vertical line */
+    @media (max-width: 520px) {
+        .wave {
+            display: none;
+        }
+
+        .steps {
+            height: auto;
+        }
+
+        .step {
+            position: static;
+            transform: none;
+            width: 100%;
+            text-align: left;
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            padding: 18px 0;
+            border-bottom: 1px solid rgba(20, 30, 50, 0.04);
+        }
+
+        .step .marker {
+            flex: 0 0 44px;
+        }
+
+        .step .title {
+            margin: 0;
+            font-size: 15px;
+        }
+
+        .step .desc {
+            margin: 6px 0 0;
+        }
+    }

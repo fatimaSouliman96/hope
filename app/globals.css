@@ -20,7 +20,7 @@
   width: 100%;
   max-width: 100%;
   padding: 2rem 9rem;
-  padding-top: 16rem;
+  padding-top: 12rem;
 }
 
 .section-title {
@@ -31,7 +31,9 @@
   padding-bottom: 3rem;
   text-align: center;
 }
-
+.des-text{
+  text-align: center;
+}
 @media (max-width: 992px) {
   .main {
     padding: 2rem 2rem;

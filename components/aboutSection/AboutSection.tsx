@@ -8,18 +8,20 @@ export default function AboutSection(
         shapes,
         links,
         aboutPge,
-        reverse
+        reverse,
+        oneImage
     }:
         {
             title: string,
             descrabtion: string,
             shapes?: boolean,
-            links?:string[],
+            links?: string[],
             aboutPge?: string,
             reverse?: string,
+            oneImage?: string
         }) {
     return (
-        <div className={`about ${aboutPge} ${reverse}` }>
+        <div className={`about ${aboutPge} ${reverse}`}>
             <div className='text-side'>
                 <h2 className='section-title'>
                     {title}
@@ -43,11 +45,16 @@ export default function AboutSection(
                             </div>
                         </>
                         :
-                        <div className='images' >
-                            {links && links.map((ele, index) => {
-                                return <div  className={ele.slice(1,5)} style={{position:"relative"}} key={index}><Image src={ele} alt='aboutHome' fill objectFit='cover' /></div>
-                            }) }
-                        </div>
+                        oneImage ?
+                            <div className='oneImage' >
+                                {oneImage&&<Image style={{borderRadius:"12px"}} src={oneImage} alt='aboutHome' fill objectFit='cover' />}
+                            </div>
+                            :
+                            <div className='images' >
+                                {links && links.map((ele, index) => {
+                                    return <div className={ele.slice(1, 5)} style={{ position: "relative" }} key={index}><Image src={ele} alt='aboutHome' fill objectFit='cover' /></div>
+                                })}
+                            </div>
                 }
 
             </div>

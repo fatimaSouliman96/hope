@@ -1,13 +1,13 @@
 .navbar {
-    padding: 15px 50px;
+    padding: 15px 4rem!important;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
-    position: fixed;
     top: 0;
     max-width: 100%;
     width: 100%;
     z-index: 99;
-
+    position: fixed!important;
+    box-shadow: 0px 2px 9px 0px #8f8b8b;
 }
 
 .container-fluid {
@@ -39,7 +39,6 @@
 }
 
 .nav-link {
-    padding: 16px 8px !important;
     width: 77px;
     height: 32px;
     text-align: center;
