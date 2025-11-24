@@ -1,5 +1,6 @@
 .timelinesection{
     width: 100%;
     height: 100vh;
+    min-height: max-content;
     padding-top: 6rem;
 }

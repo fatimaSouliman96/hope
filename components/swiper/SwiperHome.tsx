@@ -8,12 +8,14 @@ import 'swiper/css/pagination';
 import './swiper.css';
 import Image from 'next/image';
 import { Autoplay } from 'swiper/modules';
+import { swiperData } from '@/constant/swiperHomeData';
 
 
 
 export default function SwiperHome() {
+
     return (
-        <>
+        <div className='swiperHome'>
             <Swiper
                 slidesPerView={3.2}
                 spaceBetween={30}
@@ -52,63 +54,25 @@ export default function SwiperHome() {
                 }}
                 className="mySwiper"
             >
-                <SwiperSlide>
-                    <Image src={'/swiperImg.jpg'} alt='swiperImg' fill objectFit='cover' />
-                    <div className='text' >
-                        <h1>
-                            Mobility & Play Program
-                        </h1>
-                        <p>
-                            Combining physical therapy with fun activities to improve motor skills.
-                        </p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src={'/swiperImg.jpg'} alt='swiperImg' fill objectFit='cover' />
-                    <div className='text' >
-                        <h1>
-                            Mobility & Play Program
-                        </h1>
-                        <p>
-                            Combining physical therapy with fun activities to improve motor skills.
-                        </p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src={'/swiperImg.jpg'} alt='swiperImg' fill objectFit='cover' />
-                    <div className='text' >
-                        <h1>
-                            Mobility & Play Program
-                        </h1>
-                        <p>
-                            Combining physical therapy with fun activities to improve motor skills.
-                        </p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src={'/swiperImg.jpg'} alt='swiperImg' fill objectFit='cover' />
-                    <div className='text' >
-                        <h1>
-                            Mobility & Play Program
-                        </h1>
-                        <p>
-                            Combining physical therapy with fun activities to improve motor skills.
-                        </p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src={'/swiperImg.jpg'} alt='swiperImg' fill objectFit='cover' />
-                    <div className='text' >
-                        <h1>
-                            Mobility & Play Program
-                        </h1>
-                        <p>
-                            Combining physical therapy with fun activities to improve motor skills.
-                        </p>
-                    </div>
-                </SwiperSlide>
+                {
+                    swiperData.map((ele, index) => {
+                        return <SwiperSlide>
+                            <Image src={ele.image} alt='swiperImg' fill objectFit='cover' />
+                            <div className='text' >
+                                <h1>
+                                    {ele.title}
+                                </h1>
+                                <p>
+                                   {ele.desc}
+                                </p>
+                            </div>
+                        </SwiperSlide>
+                    })
+                }
+
+
 
             </Swiper>
-        </>
+        </div>
     )
 }

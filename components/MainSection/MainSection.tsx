@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./MainSection.css";
 import Image from "next/image";
 
@@ -35,7 +36,7 @@ const MainSection = (
       </div>}
 
       {/* Button */}
-     {button && <button className="main-button">{button}</button>}
+     {button && <Link href={"/about"} className="main-button">{button}</Link>}
       <div className="img">
         <Image src={'/Rectangle 52.svg'} alt="Rectangle" fill objectFit="cover" />
       </div>

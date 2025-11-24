@@ -4,7 +4,7 @@
     align-items: center;
     flex-wrap: wrap;
     /* لتسمح بتوزيع العناصر عمودياً في الشاشات الصغيرة */
-    gap: 2rem;
+ 
     padding: 2rem 1rem;
 }
 
@@ -23,6 +23,10 @@
     width: 40%;
     position: relative;
     min-width: 300px;
+}
+
+.about .moreBig{
+      width: 50%!important;
 }
 
 .aboutPge .image-side {

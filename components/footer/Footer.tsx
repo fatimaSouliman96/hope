@@ -1,5 +1,7 @@
 import Image from "next/image";
 import styles from "./Footer.module.css";
+import Link from "next/link";
+import { navLinks } from "@/constant/navLinks";
 
 export default function Footer() {
     return (
@@ -24,46 +26,57 @@ export default function Footer() {
                 </div>
 
                 {/* Links */}
-                <div className={styles.linksWrapper}>
-                    <div className={styles.links}>
+                <div className={styles.links}>
                         <h4>Quick Links</h4>
-                        <a href="#">Home</a>
-                        <a href="#">About us</a>
-                        <a href="#">Services</a>
-                        <a href="#">Blog</a>
+
+                        {
+                            navLinks.map((ele, index) => {
+                                return <Link href={ele.link} key={index} >{ele.title}</Link>
+                            })
+                        }
                     </div>
 
                     <div className={styles.links}>
-                        <h4>Quick Links</h4>
-                        <a href="#">Home</a>
-                        <a href="#">About us</a>
-                        <a href="#">Services</a>
-                        <a href="#">Blog</a>
+                        <h4>Our Projects</h4>
+                        <Link href="/projects">CP</Link>
+                        <Link href="/projects">ADAP</Link>
                     </div>
 
                     <div className={styles.links}>
-                        <h4>Quick Links</h4>
-                        <a href="#">Home</a>
-                        <a href="#">About us</a>
-                        <a href="#">Services</a>
-                        <a href="#">Blog</a>
+                        <h4>Locations</h4>
+                        <a >Tartous</a>
+                        <a >Safita</a>
+                        <a >Dreikish</a>
+                        <a >Baniyas</a>
+                        <a >Ash Shaykh Badr</a>
+                        <a >Mashta Al Helou</a>
+                    </div>
+                    <div className={styles.links}>
+                        <h4>Our Values</h4>
+                        <a >Humanity</a>
+                        <a >Inclusiveness</a>
+                        <a >Responsibility</a>
+                        <a >Community Solidarity</a>
+                        <a >Sustainability</a>
                     </div>
                     {/* Contact */}
                     <div className={styles.links}>
                         <h4>Contact</h4>
 
-                        <div className={styles.contactRow}>
-                            <span>
-                                <Image src={'/emailfooter.svg'} alt="email" fill objectFit="cover" />
-                            </span>
-                            <p>anisssaade@gmail.com</p>
+                        <div >
+                            <Link className={styles.contactRow} href={"mailto:anisssaade@gmail.com"} >
+                                <span>
+                                    <Image src={'/emailfooter.svg'} alt="email" fill objectFit="cover" />
+                                </span>
+                                <p>anisssaade@gmail.com</p>
+                            </Link>
                         </div>
 
                         <div className={styles.contactRow}>
                             <span>
                                 <Image src={'/Phonefooter.svg'} alt="email" fill objectFit="cover" />
                             </span>
-                            <p>+963 43 234 567</p>
+                            <p>018 658 1830</p>
                         </div>
 
                         <div className={styles.contactRow}>
@@ -75,12 +88,16 @@ export default function Footer() {
 
                         <div className={styles.social}>
                             <span>
-                                <Image src={'/Instagramfooter.svg'} alt="email" fill objectFit="cover" />
+                                <Link href={"https://www.facebook.com/share/1Dim7bRP1R/"} target="_blank">
+                                    <Image src={'/Instagramfooter.svg'} alt="email" fill objectFit="cover" />
+                                </Link>
                             </span>
-                            <span><Image src={'/Facebookfooter.svg'} alt="email" fill objectFit="cover" /></span>
+                            <span>
+                                <Link target="_blank" href={"https://www.instagram.com/anissaadeassociation?igsh=MXM1bzd3Zm85cWU="} ><Image src={'/Facebookfooter.svg'} alt="email" fill objectFit="cover" /></Link>
+                            </span>
                         </div>
                     </div>
-                </div>
+
 
 
             </div>

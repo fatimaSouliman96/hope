@@ -3,7 +3,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 17rem 5rem 0 5rem;
+  padding: 15rem 5rem 0 5rem;
   gap: 2rem;
   align-items: center;
   width: 100%;
@@ -41,7 +41,10 @@
 
 /* Main button */
 .main-button {
-
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 140px;
   height: 36px;
   border: none;
@@ -71,9 +74,18 @@
 .services{
   background-image: url("/serviseBg.jpg");
 }
+.projects-page{
+  background-image: url("/projectBg.jpg");
+}
+.contact-page{
+  background-image: url("/contactbg.jpg");
+}
+.blogs-page{
+  background-image: url("/blogsbg.jpg");
+}
 @media(max-width: 640px){
   .main-section {
-    padding: 0 1.5rem;
+      padding: 15rem 1.5rem 0 1.5rem;
   }
   .first-text {
   font-size: 30px;

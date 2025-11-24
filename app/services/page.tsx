@@ -19,7 +19,7 @@ export default function page() {
                 <p className='des-text'>
                     At HealthPlus, we are dedicated to providing accessible and comprehensive care to our community. Explore our range of core services designed to support your well-being.
                 </p>
-                <Tabs currentTab='Free Education' options={["Free Education", "Physical Therapy", "Medical Supervision", "Ambulance Service"]} />
+                <Tabs />
                 <TimeLineSection />
                 <JoinSection/>
 

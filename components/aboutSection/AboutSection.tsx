@@ -30,7 +30,7 @@ export default function AboutSection(
                     {descrabtion}
                 </p>
             </div>
-            <div className="image-side">
+            <div className={`image-side ${oneImage ? "moreBig" : ""} `}>
                 {
                     shapes ?
                         <>

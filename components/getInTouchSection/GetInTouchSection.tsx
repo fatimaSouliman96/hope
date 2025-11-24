@@ -21,6 +21,7 @@ const ContactSection: React.FC = () => {
 
                         <ul className="contact-details">
                             <li>
+                                
                                 <Image width={24} height={24} src={"/email.svg"} alt='email' />
                                 <p>
                                     anissasade@gmail.com
@@ -50,15 +51,6 @@ const ContactSection: React.FC = () => {
                                     <Image src={"/instagram.svg"} alt='Instagram' width={24} height={24} />
                                 </a>
                             </div>
-                        </div>
-
-                        <div className="contact-map">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.746414710991!2d36.102338!3d34.833793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15227c8b5e3db9c9%3A0x2f7415e5bfe5df54!2sMashta%20al%20Helou%2C%20Syria!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
-                                allowFullScreen
-                                loading="lazy"
-                                title="Map location"
-                            ></iframe>
                         </div>
                     </div>
 

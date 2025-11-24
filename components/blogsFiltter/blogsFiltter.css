@@ -1,0 +1,286 @@
+/* ================= Tabs Section ================= */
+
+.tabs-blogs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    box-sizing: border-box;
+}
+
+.title-options {
+    font-weight: 500;
+    font-size: 36px;
+    color: #1C93CD;
+}
+
+/* ================= Tabs Options (Side Menu) ================= */
+.tabs-blogs .tabs-option {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    min-width: 180px;
+    gap: 1rem;
+}
+
+/* ================= Tab Content (Main Area) ================= */
+.tabs-blogs .tab-content {
+    width: 65%;
+}
+
+.tabs-blogs .content-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+
+/* ================= Tab Buttons ================= */
+.tabs-blogs .tabs-option .option {
+    width: 70%;
+    height: 50px;
+    padding: 10px 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #323232;
+    text-align: left;
+    background-color: #f8f8f8;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tabs-blogs .tabs-option .option:hover {
+    background-color: #1b305b;
+    color: #fff;
+}
+
+.tabs-blogs .tabs-option .active-option {
+    background-color: #1b305b;
+    color: #fff;
+}
+
+/* ================= Tab Pane ================= */
+.tabs-blogs .tab-pane {
+    width: 100%;
+    height: 431px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.tabs-blogs .tab-pane::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 9;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(27, 48, 91, 0.46) 61.54%);
+}
+
+.tabs-blogs .tab-pane img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.tabs-blogs .tab-pane h3 {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    z-index: 10;
+    padding-right: 13rem;
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+    line-height: 1.2;
+}
+
+.tabs-blogs .posts {
+    flex-direction: column;
+    background-color: #E2ECF0;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 6px;
+}
+.tabs-blogs .posts-desk {
+       display: flex;
+}
+
+.posts-mob {
+    display: none!important;
+}
+.title-options-desk{
+    display: block!important;
+}
+.title-options-mob {
+    display: none!important;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* --- Medium Devices (Tablets) --- */
+@media (max-width: 1274px) {
+    
+.tabs-blogs .content-cards {
+    gap: 2rem;
+}
+}
+@media (max-width: 1208px) {
+    
+.tabs-blogs .content-cards {
+   grid-template-columns: repeat(1, 1fr);
+   gap: 2rem;
+}
+}
+@media (max-width: 992px) {
+    .tabs-blogs {
+        padding-top: 2rem;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .tabs-blogs .tabs-option {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        min-width: unset;
+    }
+
+    .tabs-blogs .tabs-option .option {
+        width: auto;
+        min-width: 120px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .tabs-blogs .tab-content {
+        width: 100%;
+    }
+
+    .tabs-blogs .tab-pane {
+        height: 380px;
+    }
+
+    .tabs-blogs .tab-pane h3 {
+        font-size: 28px;
+        padding-right: 5rem;
+    }
+
+    .tabs-blogs .content-cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .posts-mob {
+        display: flex !important;
+    }
+
+    .posts-desk{
+        display: none !important;
+    }
+
+    .title-options-mob {
+        display: block !important;
+    }
+    .title-options-desk{
+        display: none !important;
+    }
+
+}
+
+/* --- Small Devices (Mobile) --- */
+@media (max-width: 640px) {
+    .tabs-blogs {
+        padding-top: 2rem;
+        gap: 1.5rem;
+        flex-direction: column-reverse;
+    }
+
+    .tabs-blogs .tabs-option {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+    }
+
+    .tabs-blogs .tabs-option .option {
+        min-width: 100px;
+        height: 44px;
+        font-size: 14px;
+        padding: 8px 10px;
+        text-align: center;
+    }
+
+    .tabs-blogs .tab-pane {
+        height: 280px;
+    }
+
+    .tabs-blogs .tab-pane h3 {
+        font-size: 20px;
+        left: 10px;
+        padding-right: 2rem;
+    }
+
+    .tabs-blogs .content-cards {
+        grid-template-columns: 1fr;
+        /* عمود واحد على الجوال */
+        gap: 2rem;
+    }
+
+    .posts-mob {
+        display: flex !important;
+    }
+
+    .posts-desk{
+        display: none !important;
+    }
+        .title-options-mob {
+        display: block !important;
+    }
+    .title-options-desk{
+        display: none !important;
+    }
+}
+
+/* --- Extra Small (Very Small Phones) --- */
+@media (max-width: 480px) {
+    .title-options {
+        font-size: 26px;
+    }
+
+    .tabs-blogs .tab-pane {
+        height: 220px;
+    }
+
+    .tabs-blogs .tab-pane h3 {
+        font-size: 18px;
+        left: 8px;
+        padding-right: 1rem;
+    }
+
+    .tabs-blogs .tabs-option .option {
+        min-width: 90px;
+        font-size: 13px;
+    }
+
+    .posts-mob {
+        display: flex !important;
+    }
+
+    .posts-desk{
+        display: none !important;
+    }
+        .title-options-mob {
+        display: block !important;
+    }
+    .title-options-desk{
+        display: none !important;
+    }
+}

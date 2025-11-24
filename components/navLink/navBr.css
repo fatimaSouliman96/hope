@@ -13,7 +13,16 @@
 .container-fluid {
     justify-content: space-between !important;
 }
-
+.top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    max-width: 100%;
+}
+.navbar-toggler{
+    height: 50px;
+}
 .navbar-collapse {
     flex-basis: 0% !important;
     flex-grow: 0 !important;
@@ -62,4 +71,10 @@
 }
 .active .nav-link{
  color: white !important;
+}
+@media(max-width: 991px){
+    .container-fluid {
+    flex-direction: column;
+    align-items: center;
+}
 }

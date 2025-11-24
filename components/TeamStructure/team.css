@@ -1,0 +1,10 @@
+.accordion-button::after {
+  background-image: url('/plus.svg') !important;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #1B305B;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url('/minus.svg') !important;
+}

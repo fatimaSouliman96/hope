@@ -13,14 +13,14 @@ export const navLinks = [
     },
     {
         title: "Projects",
-        link: ""
+        link: "/projects"
     },
     {
         title: "Contact",
-        link: ""
+        link: "/contact"
     },
     {
         title: "Blog",
-        link: ""
+        link: "/blogs"
     }
 ]

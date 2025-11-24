@@ -16,7 +16,7 @@ const steps: Step[] = [
 
 export default function Timeline() {
     return (
-        <section className="timeline">
+        <div className="timeline">
             <div className="inner">
                 {/* SVG wavy dashed path */}
                 <div className="wave" >
@@ -37,6 +37,6 @@ export default function Timeline() {
                     ))}
                 </div>
             </div>
-        </section>
+        </div>
     );
 }

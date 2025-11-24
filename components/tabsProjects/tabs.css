@@ -1,0 +1,189 @@
+/* ===== Tabs Section ===== */
+.tabs-projects {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10rem;
+  padding-top: 1rem;
+  box-sizing: border-box;
+}
+
+/* ===== Side Menu ===== */
+.tabs-projects .tabs-option {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 25%;
+  min-width: 180px;
+}
+
+.tabs-projects .tabs-option .option {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  color: #323232;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.tabs-projects .tabs-option .option:hover {
+  background-color: #1b305b;
+  color: white !important;
+}
+
+.tabs-projects .tabs-option .active-option {
+  background-color: #1b305b;
+  color: white !important;
+}
+
+/* ===== Content ===== */
+.tab-content {
+  width: 75%;
+}
+
+/* ===== Pane ===== */
+.tabs-projects .tab-pane {
+  width: 100%;
+  position: relative;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow: hidden;
+  background-color: transparent !important;
+}
+
+/* ===== Images ===== */
+.tabs-projects .tab-pane img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* ===== Text ===== */
+.tabs-projects .tab-pane h3 {
+  font-weight: 500;
+  font-size: 28px;
+  color: #1b305b;
+  line-height: 1.5;
+  width: 45%;
+}
+
+/* ===== Layout Inside Pane ===== */
+.tabs-projects .top-side {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tabs-projects .image-containar {
+  width: 43%;
+  height: 260px;
+  position: relative;
+}
+
+.tabs-projects .tab-pane .bootom-side {
+  width: 50%;
+  height: 240px;
+  align-self: center;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+
+/* ===== Large Tablets / Small Laptops (max 992px) ===== */
+@media (max-width: 992px) {
+
+  .tabs-projects {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .tabs-projects .tabs-option {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .tabs-projects .tabs-option .option {
+    width: auto;
+    min-width: 140px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .tab-content {
+    width: 100%;
+  }
+
+  .tabs-projects .top-side {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tabs-projects .image-containar {
+    width: 80%;
+    height: 230px;
+  }
+
+  .tabs-projects .tab-pane h3 {
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .tabs-projects .tab-pane .bootom-side {
+    width: 80%;
+    height: 220px;
+  }
+}
+
+/* ===== Mobile (max 640px) ===== */
+@media (max-width: 640px) {
+
+  .tabs-projects {
+    gap: 1.5rem;
+  }
+
+  .tabs-projects .tabs-option {
+    gap: 0.5rem;
+  }
+
+  .tabs-projects .tabs-option .option {
+    min-width: 100px;
+    height: 44px;
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .tabs-projects .top-side {
+    gap: 1rem;
+  }
+
+  .tabs-projects .image-containar {
+    width: 100%;
+    height: 200px;
+  }
+
+  .tabs-projects .tab-pane h3 {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .tabs-projects .tab-pane .bootom-side {
+    width: 100%;
+    height: 200px;
+  }
+}

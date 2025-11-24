@@ -1,0 +1,79 @@
+.resentPostsCard {
+    width: 100%;
+    min-height: 162px;
+    max-height: max-content;
+    padding: 1rem 1rem 2rem 1rem;
+    background-color: white;
+    border-radius: 6px;
+
+}
+
+.resentPostsCard .top-side {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.resentPostsCard .image {
+    position: relative;
+}
+.resentPostsCard .image .imgpost {
+    border-radius: 6px;
+}
+.resentPostsCard .title {
+    font-weight: 600;
+    font-size: 16px;
+    color: #1B305B;
+    line-height: 1.5;
+    padding-right: 3rem;
+
+}
+
+.resentPostsCard .desc {
+    font-weight: 400;
+    font-size: 14px;
+    color: #1B305B;
+    padding-right: 3rem;
+    padding-top: 0.2rem;
+}
+
+/* ===========================
+   Responsive Fix
+   =========================== */
+@media (max-width: 768px) {
+  .resentPostsCard .top-side {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .resentPostsCard .image {
+    width: 100%;
+  }
+
+  .resentPostsCard .image .imgpost {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .resentPostsCard .title,
+  .resentPostsCard .desc {
+    padding-right: 0;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resentPostsCard {
+    padding: 0.8rem;
+  }
+
+  .resentPostsCard .title {
+    font-size: 14px;
+  }
+
+  .resentPostsCard .desc {
+    font-size: 13px;
+  }
+}
