@@ -89,11 +89,14 @@ export default function Footer() {
                     <div className={styles.social}>
                         <span>
                             <Link href={"https://www.facebook.com/share/1Dim7bRP1R/"} target="_blank">
-                                <Image src={'/Instagramfooter.svg'} alt="email" fill objectFit="cover" />
+                               <Image src={'/Facebookfooter.svg'} alt="email" fill objectFit="cover" />
+                     
                             </Link>
                         </span>
                         <span>
-                            <Link target="_blank" href={"https://www.instagram.com/anissaadeassociation?igsh=MXM1bzd3Zm85cWU="} ><Image src={'/Facebookfooter.svg'} alt="email" fill objectFit="cover" /></Link>
+                            <Link target="_blank" href={"https://www.instagram.com/anissaadeassociation?igsh=MXM1bzd3Zm85cWU="} >
+                                    <Image src={'/Instagramfooter.svg'} alt="email" fill objectFit="cover" />
+                            </Link>
                         </span>
                     </div>
                 </div>
@@ -105,7 +108,7 @@ export default function Footer() {
             <div className={styles.bottomBorder}></div>
 
             <p className={styles.copy}>
-                © 2024 Anis Saadeh Angelic Association. All rights reserved.
+                © 2025 Anis Saadeh Angelic Association. All rights reserved.
             </p>
         </footer>
     );

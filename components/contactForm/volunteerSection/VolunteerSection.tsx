@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import '../style.css'
+import Link from 'next/link'
 
 export default function VolunteerSection() {
     return (
@@ -12,37 +13,9 @@ export default function VolunteerSection() {
                             <h2>Volunteer Application Form – Anis Saadeh Angelic Association</h2>
                             <p>The Anis Saadeh Angelic Association strives to promote the spirit of humanitarian and community work by engaging individuals of all age groups in volunteer activities that contribute to community development and support for children, adolescents, and youth. Completing this form helps match you with volunteer opportunities that suit your abilities and interests.</p>
                             <form>
-                                 <div className="form-floating mb-3">
-                                    <input type="email" className="form-control" id="floatingInput" placeholder="Your Email" />
-                                    <label htmlFor="floatingInput">Your Email</label>
-                                </div>
-                                <div className="form-floating mb-3">
-                                    <input type="text" className="form-control" id="floatingPassword" placeholder="Your Name" />
-                                    <label htmlFor="floatingPassword">Full Name</label>
-                                </div>
-                               
-                                <div className="form-floating mb-3">
-                                    <input type="text" className="form-control" id="floatingAge" placeholder="Age" />
-                                    <label htmlFor="floatingAge">Age</label>
-                                </div>
-                                <div className="form-floating mb-3">
-                                    <input type="text" className="form-control" id="floatingAddress" placeholder="Address" />
-                                    <label htmlFor="floatingAddress">Permanent Address</label>
-                                </div>
-                               
-                                <div className="form-floating mb-3">
-                                    <input type="text" className="form-control" id="floatingExperience" placeholder="Experience" />
-                                    <label htmlFor="floatingExperience">Qualifications and previous Experience</label>
-                                </div>
-                                <div className="form-floating mb-3">
-                                    <input type="text" className="form-control" id="floatingAvailability" placeholder="Availability" />
-                                    <label htmlFor="floatingAvailability">Availability</label>
-                                </div>
-                               
-
-                                <button type="button" className="send-btn" disabled>
-                                    Send message
-                                </button>
+                                <Link href={""} className="send-btn" >
+                                    volunteer with us
+                                </Link>
                             </form>
                         </div>
                     </div>
@@ -56,7 +29,7 @@ export default function VolunteerSection() {
                             <div className='shape2' >
                                 <Image src={"/shape2.svg"} alt='shape2' fill objectFit='cover' />
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>

@@ -20,14 +20,14 @@
 /* First text */
 .first-text {
   font-weight: 600;
-  font-size: 60px;
+  font-size: 50px;
   color: #1B305B;
 }
 
 /* Second text */
 .second-text {
   font-weight: 600;
-  font-size: 40px;
+  font-size: 30px;
   color: #1B305B;
 }
 
@@ -83,6 +83,28 @@
 .blogs-page{
   background-image: url("/blogsbg.jpg");
 }
+@media (max-width: 820px) {
+    .main-section {
+      padding: 15rem 1.5rem 0 1.5rem;
+  }
+  .first-text {
+  font-size: 35px;
+}
+
+/* Second text */
+.second-text {
+  font-size: 25px;
+}
+
+/* Final text */
+.final-text {
+  font-size: 15px;
+}
+.main-button {
+  font-size: 12px;
+  margin-top: 1rem;
+}
+}
 @media(max-width: 640px){
   .main-section {
       padding: 15rem 1.5rem 0 1.5rem;
@@ -99,6 +121,7 @@
 /* Final text */
 .final-text {
   font-size: 10px;
+  padding: 0!important;
 }
 .main-button {
   font-size: 12px;

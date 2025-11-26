@@ -11,7 +11,7 @@ export const swiperData = [
     },
     {
         image: "/swiperHome3.jpg",
-        title: "Inclusive Classroom Initiative",
+        title: "Health & Wellness Outreach",
         desc: "Providing crucial medical support and preventative care to communities."
     },
     {

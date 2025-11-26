@@ -1,3 +1,5 @@
+"use client"
+
 import ContactForm from '@/components/contactForm/ContactForm'
 import MainSection from '@/components/MainSection/MainSection'
 import VolunteerSection from '@/components/contactForm/volunteerSection/VolunteerSection'
@@ -7,7 +9,7 @@ export default function contactPage() {
 
     return (
         <div>
-            <MainSection page='contact-page' firsttext='Contact us' />
+            <MainSection page='contact-page' firsttext='Contact Us' />
             <ContactForm />
             <VolunteerSection />
         </div>

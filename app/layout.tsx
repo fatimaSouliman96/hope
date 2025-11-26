@@ -5,6 +5,8 @@ import NavBr from "../components/navLink/NavBr";
 import Footer from "@/components/footer/Footer";
 import Script from "next/script";
 import { Poppins } from 'next/font/google';
+import { SessionProvider } from "next-auth/react";
+import ClientLayoutWrapper from "@/components/ClientComponent/ClientLayoutWrapper";
 
 
 const poppins = Poppins({
@@ -20,7 +22,7 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode;
 }>) {
@@ -29,8 +31,9 @@ export default function RootLayout({
 
       <body className={poppins.className}>
         <NavBr />
-        {children}
-        <Footer />
+              {children}
+              <Footer />
+
         <Script
           src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
           strategy="beforeInteractive"

@@ -157,7 +157,12 @@
     border-radius: 25px;
     padding: 40px;
 }
-
+.send-btn{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .volunteer-form-wrapper h2 {
     font-weight: 700;
     color: #1c3865;

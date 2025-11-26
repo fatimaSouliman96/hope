@@ -19,7 +19,7 @@ export default function ContactForm() {
                                 </div>
                                 <div className="info-item">
                                      <Image width={24} height={24} src={"/phone.svg"} alt='phone' />
-                                    <span>+963 43 234 567</span>
+                                    <span>018 658 1830</span>
                                 </div>
                                 <div className="info-item">
                                    <Image width={24} height={24} src={"/location.svg"} alt='location' />
