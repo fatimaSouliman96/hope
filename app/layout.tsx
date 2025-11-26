@@ -5,8 +5,6 @@ import NavBr from "../components/navLink/NavBr";
 import Footer from "@/components/footer/Footer";
 import Script from "next/script";
 import { Poppins } from 'next/font/google';
-import { SessionProvider } from "next-auth/react";
-import ClientLayoutWrapper from "@/components/ClientComponent/ClientLayoutWrapper";
 
 
 const poppins = Poppins({
