@@ -1,10 +1,4 @@
-import React from 'react';
 import { ValueCard } from './ValueCard';
-import { CompassionIcon } from '../icons/CompassionIcon';
-import { InclusivenessIcon } from '../icons/InclusivenessIcon';
-import { ResponsibilityIcon } from '../icons/ResponsibilityIcon';
-import { CommunitySolidarityIcon } from '../icons/CommunitySolidarityIcon';
-import { SustainabilityIcon } from '../icons/SustainabilityIcon';
 import './CoreValues.css'
 
 export interface CoreValue {
