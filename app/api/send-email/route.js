@@ -1,9 +1,11 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+export const runtime = "nodejs"; // مهم جداً مع Resend
 
 export async function POST(req) {
   try {
+    const resend = new Resend(process.env.RESEND_API_KEY); // ← داخل POST فقط
+
     const body = await req.json();
     const { name, email, phone, message } = body;
 
@@ -22,6 +24,7 @@ export async function POST(req) {
 
     return Response.json({ success: true, data });
   } catch (error) {
+    console.error(error);
     return Response.json({ success: false, error }, { status: 500 });
   }
 }
